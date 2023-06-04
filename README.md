@@ -3,7 +3,7 @@
 ## Cheatsheet for C++98 standard as we have to follow the standard based on the subject
 
 --------------------------------------------------------------------------------------------------------------------------------------------
-## Sample Phot:
+## Sample Photo:
 
 ![image](https://github.com/mdabir1203/42_Object_Oriented_Cheatsheets/assets/66947064/b4b11350-0801-4290-8301-28179d174366)
 
