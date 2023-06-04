@@ -18,11 +18,9 @@ If you find anything missing or wrong please feel free to add a pull request
 1. For modifications : look into the class function call "pdf.addCheatsheet" and modify it. 
 2. Run `pip install pypdf`
 3. Then run `python cpp98_cheatsheet.py`
+------------------------------------------------------------------------------------------------------------------------
 
-More to add up
+## Things to add up : 
+Feel free to suggest or write a github issue.
 
-If this makes your life easy . Feel free to give a sponsor or fund me through a project of yours. 
-
-Its tough time for a developer outside of his country. 
-
-Your help will be appreciated with gratitude and prayers
+# If this makes your life easy . Feel free to give a sponsor or fund me through a project of yours Your help will be appreciated with gratitude and prayers
