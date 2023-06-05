@@ -23,4 +23,7 @@ If you find anything missing or wrong please feel free to add a pull request
 ## Things to add up : 
 Feel free to suggest or write a github issue.
 
+--- Inspired from this guy : https://github.com/mortennobel/cpp-cheatsheet
+
+
 # If this makes your life easy . Feel free to give a sponsor or fund me through a project of yours Your help will be appreciated with gratitude and prayers
