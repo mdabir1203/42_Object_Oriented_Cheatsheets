@@ -2,9 +2,10 @@
 
 ## Cheatsheet for C++98 standard as we have to follow the standard based on the subject
 
-```c
 
 ## Headers
+```cpp
+
 // Comment to end of line
 /* Multi-line comment */
 #include  <stdio.h>         // Insert standard header file
@@ -13,10 +14,10 @@
 #define F(a,b) a+b          // Replace F(1,2) with 1+2
 """)
 ```
-
-
-```c
 ## Literals
+
+```cpp
+
 255, 0377, 0xff             // Integers (decimal, octal, hex)
 123.0                      // double (real) numbers
 'a'                        // Character (literal)
