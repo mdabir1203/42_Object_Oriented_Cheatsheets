@@ -2,7 +2,7 @@
 
 ## Cheatsheet for C++98 standard as we have to follow the standard based on the subject
 
-`c
+```c
 
 ## Headers
 // Comment to end of line
@@ -12,9 +12,10 @@
 #define X some text         // Replace X with some text
 #define F(a,b) a+b          // Replace F(1,2) with 1+2
 """)
-``
-```c
+```
 
+
+```c
 ## Literals
 255, 0377, 0xff             // Integers (decimal, octal, hex)
 123.0                      // double (real) numbers
