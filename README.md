@@ -25,12 +25,12 @@
 \"string\\n\"              // Array of characters ending with newline and \\0
 \"hello\" \"world\"         // Concatenated strings
 """)
+```
 
-´´´
+## Declarations
 
-```c
+```cpp
 
-pdf.add_cheatsheet("Declarations", """
 int x;                      // Declare x to be an integer (value undefined)
 int x=255;                  // Declare and initialize x to 255
 short s; long l;            // Usually 16 or 32 bit integer (int may be either)
@@ -49,20 +49,18 @@ typedef char* String;       // Typedef: String is an alias for char*
 enum weekend {SAT,SUN};     // weekend is a type with values SAT and SUN
 enum weekend day;           // day is a variable of type weekend
 enum weekend{SAT=0,SUN=1};  // Explicit representation as int
-""")
+```
 
-´´´
+## Storage Classes
+```cpp
 
-
-´´´c
-
-pdf.add_cheatsheet("Storage Classes", """
 int x;                      // Auto (memory exists only while in scope)
 static int x;               // Global lifetime even if local scope
 extern int x;               // Information only, declared elsewhere
-""")
+```
 
-pdf.add_cheatsheet("Statements", """
+## Statements
+```cpp
 x=y;                        // Every expression is a statement
 int x;                      // Declarations are statements
 ;                           // Empty statement
@@ -88,13 +86,10 @@ break;                      // Jump out of while, do, or for loop, or switch
 continue;                   // Jump to the bottom of while, do, or for loop
 return x;                   // Return x from function to caller
 """)
-
 ```
 
+## Functions
 ```c
-
-`##pdf.add_cheatsheet("Functions", """
-
 
 int f(int x, int y);        // f is a function taking 2 ints and returning int
 void f();                   // f is a procedure taking no arguments
@@ -107,26 +102,29 @@ T operator-(T x);           // -a calls function operator-(a)
 T operator++(int);          // postfix ++ or -- (parameter ignored)
 extern "C" { void f(); }    // f() was compiled in C
 """)
-
 ```
 
-# Add additional information about main function
-pdf.add_cheatsheet("Functions", """
+### Additional information about main function
+
+```
 int main() { statements... }                     // or
 int main(int argc, char* argv[]) { statements... }
 // argv is an array of argc strings from the command line.
 // By convention, main returns status 0 if successful, 1 or higher for errors.
-""")
+```
 
-# Add information about function overloading and operators
-pdf.add_cheatsheet("Functions", """
+### Information about function overloading and operators
+```
 //  Function parameters and return values may be of any type.
 //  A function must either be declared or defined before it is used.
    It may be declared first and defined later. 
 // Every program consists of a set of global variable declarations and a set of 
    function definitions (possibly in separate files), one of which must be:
 
-// Overloading functions with different parameters
+```
+###// Overloading functions with different parameters
+```cpp
+
 void foo(int x);
 void foo(double x);
 
@@ -134,18 +132,18 @@ void foo(double x);
 T operator+(T x, T y);      // a+b (if type T) calls operator+(a, b)
 T operator-(T x);           // -a calls function operator-(a)
 T operator++(int);          // postfix ++ or -- (parameter ignored)
-""")
+```
 
-# Add note about new operators not being creatable
-pdf.add_cheatsheet("Functions", """
+### Note about new operators not being creatable
+```
 // Operators except :: . .* ?: may be overloaded.
 // Precedence order is not affected.
 // New operators may not be created.
-""")
+```
 
-# Add note on Expressions
+## Expressions
+```cpp
 
-pdf.add_cheatsheet("Expressions", """
 T::X                        // Name X defined in class T
 N::X                        // Name X defined in namespace N
 ::X                         // Global name X
@@ -206,28 +204,10 @@ x ? y : z                   // y if x is true (nonzero), else z
 throw x                     // Throw exception, aborts if not caught
 x , y                       // evaluates x and y, returns y (seldom used))
 
-
-
-""")
-
-´´´
-
-
-
-
-
-
-
-
-
-
-
+```
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------
-## Sample Photo:
-
-![image](https://github.com/mdabir1203/42_Object_Oriented_Cheatsheets/assets/66947064/b4b11350-0801-4290-8301-28179d174366)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 ## [Download Pdf](https://github.com/mdabir1203/42_Object_Oriented_Cheatsheets/files/11644703/c%2B%2B98_cheatsheet.15.pdf)
@@ -236,10 +216,6 @@ x , y                       // evaluates x and y, returns y (seldom used))
 -------------------------------------------------------------------------------------------------------------------------------
 If you find anything missing or wrong please feel free to add a pull request
 
----------------------------------------------------------------------------------------------------------------------------------------
-1. For modifications : look into the class function call "pdf.addCheatsheet" and modify it. 
-2. Run `pip install pypdf`
-3. Then run `python cpp98_cheatsheet.py`
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Things to add up : 
@@ -248,4 +224,4 @@ Feel free to suggest or write a github issue.
 --- Inspired from this guy : https://github.com/mortennobel/cpp-cheatsheet
 
 
-# If this makes your life easy . Feel free to give a sponsor or fund me through a project of yours Your help will be appreciated with gratitude and prayers
+# If this makes your life easy . Feel free to give a sponsor or fund me through a project of yours. Your help will be appreciated with gratitude and prayers
