@@ -206,12 +206,26 @@ x , y                       // evaluates x and y, returns y (seldom used))
 
 ```
 
+## Dynamic Memory Management
+```cpp
 
---------------------------------------------------------------------------------------------------------------------------------------------
+#include <new>              // Include new (std namespace)
 
---------------------------------------------------------------------------------------------------------------------------------------------
-## [Download Pdf](https://github.com/mdabir1203/42_Object_Oriented_Cheatsheets/files/11644703/c%2B%2B98_cheatsheet.15.pdf)
+int *x = new int;           // Allocate memory for an int on the heap
+int *y = new int[10];       // Allocate memory for an array of 10 ints on the heap
 
+*x = 5;                     // Assign value to allocated memory
+y[0] = 10;                  // Assign value to first element of allocated array
+
+delete x;                   // Deallocate memory for single int
+delete[] y;                 // Deallocate memory for array of ints
+
+int *z = new (nothrow) int; // Allocate memory, return NULL if allocation fails
+if (z == NULL) {
+    // Handle allocation failure
+}
+
+```
 
 -------------------------------------------------------------------------------------------------------------------------------
 If you find anything missing or wrong please feel free to add a pull request
